@@ -1,0 +1,53 @@
+/*VARS*/
+$black: #b2b2b2;
+$white: #f8fafc;
+$light-gray: #d3d3d3;
+$input-bg: rgba(0, 0, 0, 0.2);
+$dark-gray: #a9a9a9;
+$card-bg: rgba(0, 0, 0, 0.5);
+$trasparent-gray--40: rgba(255, 255, 255, 0.4);
+$body-bg: #f8fafc;
+
+/*STYLES*/
+body {
+  background-color: $body-bg;
+}
+.form-holder {
+  max-width: 600px;
+  margin: 10px auto;
+  background-color: $card-bg;
+  .card-header {
+    border-bottom: 1px solid $trasparent-gray--40;
+    color: white;
+  }
+  .card-body {
+    label {
+      color: white;
+    }
+    input {
+      background-color: $input-bg;
+      color: $light-gray;
+    }
+    small {
+      color: $white;
+    }
+  }
+  p {
+    margin-top: 2px;
+    font-size: 0.9rem;
+    color: $black;
+  }
+}
+
+.unselectable-input {
+  background-color: #eee;
+  cursor: not-allowed;
+  color: #555;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  outline: none;
+}
